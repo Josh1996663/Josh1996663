@@ -2,142 +2,117 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Portafolio Joshua</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio - Mis Habilidades</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f9;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
       color: #333;
-      text-align: center;
-      padding: 30px;
     }
     h1 {
-      margin-bottom: 40px;
+      text-align: center;
+      margin-bottom: 30px;
     }
     h2 {
-      margin: 30px 0 15px;
-      color: #444;
-      border-bottom: 2px solid #ccc;
-      display: inline-block;
-      padding-bottom: 5px;
+      margin-top: 40px;
+      color: #222;
     }
-    .skills-grid {
+    .skills-category {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 25px;
       margin-top: 20px;
     }
     .skill {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    canvas {
-      width: 150px !important;
-      height: 150px !important;
-    }
-    .label {
-      margin-top: 10px;
+    .circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 10px;
       font-weight: bold;
+      font-size: 18px;
+      position: relative;
+      background: conic-gradient(#4CAF50 calc(var(--percent) * 1%), #ddd 0%);
+    }
+    .circle::after {
+      content: "";
+      width: 90px;
+      height: 90px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+    }
+    .circle span {
+      position: absolute;
     }
   </style>
 </head>
 <body>
-  <h1>💼 Portafolio de Habilidades - Joshua</h1>
+  <h1>Mis Habilidades</h1>
 
   <!-- Business Analytics -->
-  <h2>📊 Business Analytics</h2>
-  <div class="skills-grid">
+  <h2>Business Analytics</h2>
+  <div class="skills-category">
     <div class="skill">
-      <canvas id="sql"></canvas>
-      <div class="label">SQL Server (95%)</div>
+      <div class="circle" style="--percent: 85;">
+        <span>85%</span>
+      </div>
+      <p>Power BI</p>
     </div>
     <div class="skill">
-      <canvas id="python"></canvas>
-      <div class="label">Python (85%)</div>
+      <div class="circle" style="--percent: 80;">
+        <span>80%</span>
+      </div>
+      <p>SQL Server</p>
     </div>
     <div class="skill">
-      <canvas id="msproject"></canvas>
-      <div class="label">MS Project (90%)</div>
+      <div class="circle" style="--percent: 70;">
+        <span>70%</span>
+      </div>
+      <p>Tableau</p>
     </div>
   </div>
 
   <!-- Business Intelligence -->
-  <h2>📈 Business Intelligence</h2>
-  <div class="skills-grid">
+  <h2>Business Intelligence</h2>
+  <div class="skills-category">
     <div class="skill">
-      <canvas id="powerbi"></canvas>
-      <div class="label">Power BI (95%)</div>
-    </div>
-    <div class="skill">
-      <canvas id="tableau"></canvas>
-      <div class="label">Tableau (80%)</div>
+      <div class="circle" style="--percent: 75;">
+        <span>75%</span>
+      </div>
+      <p>MS Project</p>
     </div>
   </div>
 
   <!-- Ofimática -->
-  <h2>🖥️ Ofimática</h2>
-  <div class="skills-grid">
+  <h2>Ofimática</h2>
+  <div class="skills-category">
     <div class="skill">
-      <canvas id="word"></canvas>
-      <div class="label">Word (90%)</div>
+      <div class="circle" style="--percent: 95;">
+        <span>95%</span>
+      </div>
+      <p>Word</p>
     </div>
     <div class="skill">
-      <canvas id="excel"></canvas>
-      <div class="label">Excel (95%)</div>
+      <div class="circle" style="--percent: 90;">
+        <span>90%</span>
+      </div>
+      <p>Excel</p>
     </div>
     <div class="skill">
-      <canvas id="powerpoint"></canvas>
-      <div class="label">PowerPoint (85%)</div>
+      <div class="circle" style="--percent: 85;">
+        <span>85%</span>
+      </div>
+      <p>PowerPoint</p>
     </div>
   </div>
-
-  <script>
-    function crearGrafico(id, porcentaje, color) {
-      new Chart(document.getElementById(id), {
-        type: 'doughnut',
-        data: {
-          datasets: [{
-            data: [porcentaje, 100 - porcentaje],
-            backgroundColor: [color, '#e6e6e6'],
-            borderWidth: 0
-          }]
-        },
-        options: {
-          cutout: '75%',
-          plugins: {
-            tooltip: { enabled: false },
-            legend: { display: false },
-            beforeDraw: (chart) => {
-              const {width} = chart;
-              const ctx = chart.ctx;
-              ctx.restore();
-              ctx.font = "bold 18px Arial";
-              ctx.textBaseline = "middle";
-              const text = porcentaje + "%";
-              const textX = Math.round((width - ctx.measureText(text).width) / 2);
-              const textY = chart._metasets[0].data[0].y;
-              ctx.fillText(text, textX, textY);
-              ctx.save();
-            }
-          }
-        }
-      });
-    }
-
-    // Llamamos a la función para cada habilidad
-    crearGrafico("sql", 95, "#00758F");
-    crearGrafico("python", 85, "#3776AB");
-    crearGrafico("msproject", 90, "#217346");
-
-    crearGrafico("powerbi", 95, "#F2C811");
-    crearGrafico("tableau", 80, "#1F77B4");
-
-    crearGrafico("word", 90, "#2B579A");
-    crearGrafico("excel", 95, "#217346");
-    crearGrafico("powerpoint", 85, "#B7472A");
-  </script>
 </body>
 </html>

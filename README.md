@@ -8,33 +8,33 @@ Aquí muestro mis habilidades y herramientas favoritas.
 ## 📊 Business Analytics  
 
 **SQL**  
-![SQL](https://progress-bar.dev/85/?title=Experto)  
+<img src="https://progress-bar-svg.vercel.app/?value=85&text=Experto&color=4caf50&circle=true" width="120"/>
 
 **Python**  
-![Python](https://progress-bar.dev/75/?title=Avanzado)  
+<img src="https://progress-bar-svg.vercel.app/?value=75&text=Avanzado&color=f39c12&circle=true" width="120"/>
 
 ---
 
 ## 📈 Business Intelligence  
 
 **Power BI**  
-![Power BI](https://progress-bar.dev/80/?title=Experto)  
+<img src="https://progress-bar-svg.vercel.app/?value=80&text=Experto&color=2196f3&circle=true" width="120"/>
 
 **MS Project**  
-![MS Project](https://progress-bar.dev/65/?title=Avanzado)  
+<img src="https://progress-bar-svg.vercel.app/?value=65&text=Avanzado&color=9b59b6&circle=true" width="120"/>
 
 ---
 
 ## 🖥️ Ofimática  
 
 **Microsoft Word**  
-![Word](https://progress-bar.dev/95/?title=Experto)  
+<img src="https://progress-bar-svg.vercel.app/?value=95&text=Experto&color=2ecc71&circle=true" width="120"/>
 
 **Microsoft Excel**  
-![Excel](https://progress-bar.dev/90/?title=Experto)  
+<img src="https://progress-bar-svg.vercel.app/?value=90&text=Experto&color=27ae60&circle=true" width="120"/>
 
 **PowerPoint**  
-![PowerPoint](https://progress-bar.dev/85/?title=Experto)  
+<img src="https://progress-bar-svg.vercel.app/?value=85&text=Experto&color=e67e22&circle=true" width="120"/>
 
 ---
 
@@ -43,5 +43,3 @@ Aquí muestro mis habilidades y herramientas favoritas.
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Josh1996663&show_icons=true&theme=radical)  
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Josh1996663&layout=compact&theme=radical)  
-
----

@@ -1,6 +1,6 @@
 # 👋 Hola, soy Joshua Breiding
 
-Bienvenido a mi perfil de GitHub. Aquí encontrarás información sobre mis habilidades, certificaciones y proyectos.
+Soy un profesional en el área de Business Analytics y Business Intelligence, con una sólida formación en programación y el desarrollo de soluciones tecnológicas para la toma de decisiones estratégicas en entornos empresariales. Cuento con experiencia práctica en la implementación de proyectos de análisis de datos y en la optimización de procesos mediante el uso de herramientas avanzadas de análisis y visualización. A lo largo de mi carrera, he desarrollado habilidades en el manejo de herramientas de Business Analytics, BI (Power BI, Tableau, etc.), así como en la programación de soluciones personalizadas que apoyan la toma de decisiones informada. Además, poseo varios certificados avalados por instituciones de renombre que respaldan mi conocimiento técnico y estratégico. Mi enfoque está en transformar los datos en información útil y accesible para las empresas, optimizando así su desempeño y contribuyendo a la mejora continua. Cuento con experiencia en proyectos integradores que combinan análisis de datos, tecnología y negocio para resolver desafíos reales y generar valor tangible.
 
 ---
 
